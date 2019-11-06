@@ -7,10 +7,30 @@ package com.stackroute.datamunger.query.parser;
  * */
 
 public class AggregateFunction {
-
+	private String fieldName;
+	private String aggregateFunction;
 	// Write logic for constructor
 	public AggregateFunction(String field, String function) {
-
+		super();
+		this.fieldName=field;
+		this.aggregateFunction=function;
 	}
+	public String getFieldName() {
+		return fieldName;
+	}
+	public void setFieldName(String fieldName) {
+		this.fieldName = fieldName;
+	}
+	public String getAggregateFunction() {
+		return aggregateFunction;
+	}
+	public void setAggregateFunction(String aggregateFunction) {
+		this.aggregateFunction = aggregateFunction;
+	}
+	@Override
+	public String toString() {
+		return "AggregateFunction [fieldName=" + fieldName + ", aggregateFunction=" + aggregateFunction + "]";
+	}
+	
 
 }
